@@ -24,7 +24,7 @@ public class LoginDemo2 {
         List<WebElement> wbList = driver.findElements(By.tagName("input"));
         // it returns the list of web elements
         // represented by the given locator
-        System.out.println("size="+wbList.size());
+        System.out.println("size="+wbList.size()); //3
 
         wbList.get(0).sendKeys("admin"); // username
         wbList.get(1).sendKeys("admin"); // password
