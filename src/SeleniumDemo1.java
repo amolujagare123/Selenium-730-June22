@@ -14,6 +14,11 @@ public class SeleniumDemo1 {
         System.setProperty("webdriver.gecko.driver","Drivers/geckodriver.exe");
         WebDriver driver = new FirefoxDriver();
 
+
+     //   D:\Study\Selenium-730-June22\Drivers\geckodriver.exe - absolute path
+
+    //    Drivers/geckodriver.exe - relative path
+
        /* System.setProperty("webdriver.opera.driver","Drivers/operadriver.exe");
         WebDriver driver = new OperaDriver();*/
 
