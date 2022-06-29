@@ -11,14 +11,14 @@ public class SeleniumDemo {
 
     public static void main(String[] args) {
 
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
+       /* WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();*/
 
        /* WebDriverManager.firefoxdriver().setup();
         WebDriver driver = new FirefoxDriver();*/
 
-      /*  WebDriverManager.edgedriver().setup();
-        WebDriver driver = new EdgeDriver();*/
+        WebDriverManager.edgedriver().setup();
+        WebDriver driver = new EdgeDriver();
 
         /*WebDriverManager.operadriver().setup();
         WebDriver driver =new OperaDriver();*/
