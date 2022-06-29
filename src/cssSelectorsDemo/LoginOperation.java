@@ -20,10 +20,10 @@ public class LoginOperation {
         WebElement txtUserName = driver.findElement(By.cssSelector("input#login-username"));
         txtUserName.sendKeys("admin");
 
-        WebElement txtPass = driver.findElement(By.cssSelector("input#login-password"));
+        WebElement txtPass = driver.findElement(By.cssSelector("input[type=password]"));
         txtPass.sendKeys("admin");
 
-        WebElement btnLogin = driver.findElement(By.cssSelector("input.button"));
+        WebElement btnLogin = driver.findElement(By.cssSelector("input[value='LOG IN']"));
         btnLogin.click();
     }
 }
