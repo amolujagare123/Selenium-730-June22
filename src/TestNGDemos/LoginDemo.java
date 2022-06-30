@@ -1,11 +1,11 @@
-package JunitDemo;
+package TestNGDemos;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class LoginDemo {
 
@@ -40,10 +40,10 @@ public class LoginDemo {
         driver.get("https://stock.amolujagare.com/");
 
         WebElement txtUserName = driver.findElement(By.cssSelector("input#login-username"));
-        txtUserName.sendKeys("rere");
+        txtUserName.sendKeys("sdsd");
 
         WebElement txtPass = driver.findElement(By.cssSelector("input[type=password]"));
-        txtPass.sendKeys("3434");
+        txtPass.sendKeys("dsds");
 
         WebElement btnLogin = driver.findElement(By.cssSelector("input[value='LOG IN']"));
         btnLogin.click();

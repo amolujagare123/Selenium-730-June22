@@ -22,8 +22,8 @@ public class LoginDemo2 {
     }
 
     @After // method written below this annotation will run after every test method
-    public void closeBrowser()
-    {
+    public void closeBrowser() throws InterruptedException {
+        Thread.sleep(4000);
         driver.close();
     }
 
