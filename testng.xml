@@ -4,6 +4,11 @@
         <classes>
             <class name="TestNGDemos.demos.ClassOne"/>
             <class name="TestNGDemos.demos.ClassTwo"/>
+        </classes>
+    </test>
+
+    <test name = "module 2">
+        <classes>
             <class name="TestNGDemos.demos.ClassThree"/>
         </classes>
     </test>

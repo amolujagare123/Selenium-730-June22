@@ -1,4 +1,4 @@
-package TestNGDemos.demos;
+package TestNGDemos.Demos2;
 
 import org.testng.annotations.Test;
 
@@ -9,8 +9,8 @@ public class ClassTwo {
     {
         System.out.println("classTwoTest1");
     }
-        // (priority = 1, enabled = false)
-    @Test (enabled = false)
+
+    @Test (groups = "email")
     public void classTwoTest2()
     {
         System.out.println("classTwoTest2");
