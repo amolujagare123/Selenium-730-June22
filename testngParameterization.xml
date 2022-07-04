@@ -1,0 +1,22 @@
+<suite name="Project name">
+
+    <parameter name="url" value="http://liveProject.com" />
+    <parameter name="user" value="user-3" />
+    <parameter name="pass" value="pass-3" />
+    <parameter name="dbName" value="liveDB" />
+
+
+    <test name = "module 1">
+        <classes>
+            <class name="TestNGDemos.Demos3.ClassOne"/>
+            <class name="TestNGDemos.Demos3.ClassTwo"/>
+        </classes>
+    </test>
+
+    <test name = "module 2">
+        <classes>
+            <class name="TestNGDemos.Demos3.ClassThree"/>
+        </classes>
+    </test>
+
+</suite>
