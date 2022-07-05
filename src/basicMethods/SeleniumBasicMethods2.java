@@ -24,7 +24,7 @@ public class SeleniumBasicMethods2 {
         Thread.sleep(4000);
         //driver.close(); // closes the current window only
 
-        driver.quit(); // closes all windows opened by the driver
+      //  driver.quit(); // closes all windows opened by the driver
 
     }
 }

@@ -31,12 +31,15 @@ public class ChatLoginDemo {
         WebElement btnLogin = driver.findElement(By.cssSelector("input[value='Login']"));
         btnLogin.click();
 
-      driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
+    //  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
 
-        driver.navigate().refresh();
+       // driver.findElement(By.xpath("//body/div[@id='wrapper']/div[@id='sidebar-wrapper']/div[@role='navigation']/div[@class='sidebar-nav navbar-collapse']/ul[@id='side-menu']/li[3]/a[1]")).click();
+        driver.findElement(By.linkText("Settings")).click();
+
+       /* driver.navigate().refresh();
         String expected = "https://stock.amolujagare.com/dashboard.php";
         String actual = driver.getCurrentUrl();
 
-        Assert.assertEquals(actual,expected,"this is not a dashboard");
+        Assert.assertEquals(actual,expected,"this is not a dashboard");*/
     }
 }
