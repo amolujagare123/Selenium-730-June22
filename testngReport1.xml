@@ -1,12 +1,24 @@
 <suite name="Project name">
 
-    <listeners>
+  <!--  <listeners>
         <listener class-name="org.testng.reporters.EmailableReporter2" />
+    </listeners>-->
+
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     </listeners>
+
+    <test name = "module 1">
+        <classes>
+            <class name="TestNGDemos.sites.TutorialSites"/>
+            <class name="TestNGDemos.sites.Forumsites"/>
+        </classes>
+    </test>
 
     <test name = "module 2">
         <classes>
-            <class name="TestNGDemos.sites.TutorialSites"/>
+            <class name="TestNGDemos.sites.JobSites"/>
         </classes>
     </test>
 
