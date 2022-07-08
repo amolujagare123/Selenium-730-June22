@@ -1,0 +1,24 @@
+<suite name="Project name">
+
+    <!--  <listeners>
+      <listener class-name="org.testng.reporters.EmailableReporter2" />
+  </listeners>-->
+
+    <listeners>
+        <listener class-name="ExtentReportDemo.MyLisners.DemoListener"/>
+    </listeners>
+
+    <test name = "module 1">
+        <classes>
+            <class name="TestNGDemos.DemoListeners.ClassOne"/>
+            <class name="TestNGDemos.DemoListeners.ClassTwo"/>
+        </classes>
+    </test>
+
+    <test name = "module 2">
+        <classes>
+            <class name="TestNGDemos.DemoListeners.ClassThree"/>
+        </classes>
+    </test>
+
+</suite>

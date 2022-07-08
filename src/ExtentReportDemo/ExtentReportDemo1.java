@@ -14,6 +14,10 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
+
+import static ExtentReportDemo.Screenshot.ForExtentReport.screenshotForReport;
+
 public class ExtentReportDemo1 {
 
 
@@ -44,8 +48,7 @@ public class ExtentReportDemo1 {
 
 
     @Test
-    public void loginTest1()
-    {
+    public void loginTest1() throws IOException {
 
         ExtentTest test = extent.createTest("valid login test");
 
@@ -90,13 +93,13 @@ public class ExtentReportDemo1 {
         catch (AssertionError e)
         {
             test.fail(e.getMessage());
+            test.addScreenCaptureFromPath("./screenshots/"+screenshotForReport(driver));
         }
 
     }
 
     @Test
-    public void loginTest2()
-    {
+    public void loginTest2() throws IOException {
 
         ExtentTest test = extent.createTest("invalid login test");
 
@@ -148,6 +151,7 @@ public class ExtentReportDemo1 {
         catch (AssertionError e)
         {
             test.fail(e.getMessage());
+            test.addScreenCaptureFromPath("./screenshots/"+screenshotForReport(driver));
         }
 
     }
