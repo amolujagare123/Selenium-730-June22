@@ -1,5 +1,7 @@
 package ExtentReportDemo.Screenshot;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -29,4 +31,23 @@ public class ForExtentReport {
 
         return fileName;
     }
+
+    public static ExtentReports init()
+    {
+        ExtentSparkReporter reporter = new ExtentSparkReporter("Report\\report.html");
+        ExtentReports extent = new ExtentReports();
+        extent.attachReporter(reporter);
+
+        reporter.config().setReportName("Regression Testing Report");
+        reporter.config().setDocumentTitle("Stock Management Project");
+
+        extent.setSystemInfo("Developers Name","Ayushee");
+        extent.setSystemInfo("Testers Name","Pallavi");
+        extent.setSystemInfo("Project Domain","ERP");
+        extent.setSystemInfo("Client Name","tata steel");
+        extent.setSystemInfo("Project Dead line","7-8-2022");
+
+        return extent;
+    }
+
 }
